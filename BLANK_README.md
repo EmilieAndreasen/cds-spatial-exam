@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="images/Klar_Parat.jpg" alt="Logo" width="120" height="120">
+    <img src="images/Klar_Parat.png" alt="Logo" width="120" height="120">
   </p>
 
 <h3 align="center">From Panic to Plan: Agent-Based Evacuation Simulations</h3>
