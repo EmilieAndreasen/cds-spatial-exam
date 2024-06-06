@@ -2,7 +2,8 @@
     <img src="images/Klar_Parat.png" alt="Logo" width="400" height="400">
   </p>
 
-<h3 align="center">From Panic to Plan: Agent-Based Evacuation Simulations</h3>
+<h3 align="center">From Panic to Plan: Spatial Agent-Based
+Models for Crisis App Design</h3>
 
 <p align="center">
   Emilie Munch Andreasen (<strong><a href="https://github.com/EmilieAndreasen">@EmilieAndreasen</a></strong>),
