@@ -6,3 +6,5 @@ This folder contains:
 | ```new_part_of_aarhus```        | Folder containing shapefile components for part of Aarhus, including .cpg, .dbf, .prj, .shp, and .shx files.               | 
 | ```shelters```      | Folder containing shapefile components for shelters data, including .cpg, .dbf, .prj, .shp, and .shx files.               |
 | ```Evac_Model.nlogo```          | The NetLogo evacuation model  | 
+
+For information on how to run the model, see under *Steps for Re-running*.

@@ -26,7 +26,7 @@ This repository contains all the necessary components to run the Agent-Based Mod
 
 Key elements in this repository include:  
 - **NetLogo Code/Model:** The core ABM evacuation model developed in NetLogo 6.4.0.  
-- **Data (Shapefiles, CSVs):** Geographic data used within the NetLogo model, processed and formatted as shapefiles, and CSV files with traffic data.  
+- **Data (Shapefiles, CSVs):** Geographic data used within the NetLogo model, processed and formatted as shapefiles, CSV files with traffic data, and original unprocessed data.  
 - **Python Preprocessing Scripts:** Script for preprocessing the initial raw data to generate the required shelter shapefile for the NetLogo model.  
 - **Traffic Analysis and Plotting Scripts:** Python script for plotting traffic and evacuation shelter data in Aarhus, providing visual insights into traffic patterns near shelters.  
 
