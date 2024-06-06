@@ -42,6 +42,10 @@ The repository is structured as such:
 **1. Clone/Download and Prepare the Repository:**  
 If the attachment has not already been cloned or downloaded and unzipped, then start by cloning or downloading the zip file and unzip it in your desired location. 
 
+### Instructions (NetLogo Model)
+
+
+### Instructions (Python Scripts)
 **2. Set Up the Virtual Environment:**  
 Execute the following command in your terminal to set up the Python virtual environment and install the needed dependencies.
 ```
@@ -50,26 +54,8 @@ bash setup.sh
 
 **3. Activate the Virtual Environment and Run the Code:**  
 
-### Running the Analysis Pipeline
-To run the entire analysis pipeline, which laid the foundation for deploying the tool, type in your ```bash/zsh``` terminal while being located in the main repository folder (```cd aarhus-rentmapper```):
-```
-bash run.sh
-```
 
-#### Running the R-script
-As no Python packages supported plotting cartograms easily, this plot was created in ```R``` (4.2.3). To run this seperate analysis, ensure that you have [R](https://cran.r-project.org/src/base/R-4/) and [RScript](https://www.rdocumentation.org/packages/utils/versions/3.6.2/topics/Rscript) installed. Type in your terminal while being located in the main repository folder (```cd aarhus-rentmapper```):
-```
-RScript src/plot_cartogram.R
-```
 
-### Deploying Aarhus RentMapper Locally 
-For testing and development purposes, the ```Aarhus RentMapper``` tool can be deployed locally by typing:
-```
-streamlit run app/app.py
-```
-Note that you need:
-1. To activate the virtual environment first (```source env/bin/activate``` in the terminal)
-2. To ensure that you are located in the main folder (```cd aarhus-rentmapper```)
 
 <br>
 
