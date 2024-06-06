@@ -26,7 +26,8 @@ This repository contains all the necessary components to run the Agent-Based Mod
 
 
 Key elements in this repository include:  
-- **NetLogo Code/Model:** The core ABM evacuation model developed in NetLogo 6.4.0.  
+- **NetLogo Code/Model:** The core ABM evacuation model developed in NetLogo 6.4.0. 
+- **Results:** The resulting CSV files from the model.
 - **Data (Shapefiles, CSVs):** Geographic data used within the NetLogo model, processed and formatted as shapefiles, CSV files with traffic data, and original unprocessed data.  
 - **Python Preprocessing Scripts:** Script for preprocessing the initial raw data to generate the required shelter shapefile for the NetLogo model.  
 - **Traffic Analysis and Plotting Scripts:** Python script for plotting traffic and evacuation shelter data in Aarhus, providing visual insights into traffic patterns near shelters.  
@@ -40,7 +41,8 @@ The repository is structured as such:
 |---------|:-----------|
 | ```data``` | Folder with original un-processed raw data (see [data/README.md](https://github.com/EmilieAndreasen/cds-spatial-exam/blob/main/data/README.md)).      |
 | ```images```  | Folder with logo image and plots used in the paper. |
-| ```netlogo```  | Folder with all relevant data and NetLogo model (see [netlogo/README.md](https://github.com/EmilieAndreasen/cds-spatial-exam/blob/main/netlogo/README.md))          |
+| ```netlogo```  | Folder with all relevant data and NetLogo model (see [netlogo/README.md](https://github.com/EmilieAndreasen/cds-spatial-exam/blob/main/netlogo/README.md)).          |
+| ```results```  | Folder with two resulting CSV files from the NetLogo model. |
 | ```scripts```  | Folder with Python script and Jupyter notebook used for preprocessing data and plotting (see [script/README.md](https://github.com/EmilieAndreasen/cds-spatial-exam/blob/main/scripts/README.md)).       |
 
 <br>
@@ -81,10 +83,11 @@ Following *READ(1/2)*, you must click this. *READ(2/2)* loads the population and
 - *Load population:* Creates residents, assigns them speeds, and determines their nearest shelter and evacuation decisions.
 
 **Click on *GO***  
-This final button will run the simulation. Residents will start moving towards their assigned shelters based on their milling time and speeds. The simulation will track their evacuation status and mortality rate.  
+This final button will run the simulation. Residents will start moving towards their assigned shelters based on their milling time and speeds. The simulation will track their evacuation status and mortality rate. Note that the current NetLogo model produces results for delayed evacuation if run. 
 
 - *Residents' movement:* Residents move towards shelters if they are not dead and their milling time has elapsed. If they reach a shelter, they are marked as evacuated; if they exceed the maximum evacuation time, they are marked as dead.  
 - *Update mortality rate:* Calculates the mortality rate based on the number of dead residents.
+- *Log data:* The simulation logs evacuation status at specific intervals and terminates after a maximum evacuation time.
 
 ### Instructions (Python Script)
 **2. Set Up the Virtual Environment:**  
