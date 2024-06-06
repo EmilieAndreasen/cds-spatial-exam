@@ -1,5 +1,5 @@
 # Data Overview
-This folder contains the original data, none of which have been preprocessed etc.:  
+This folder contains the original data, none of which have been preprocessed etc. All Open Data files are licensed under the Creative Commons Atribution 4.0.  
 
 | File                           | Description                                                                          | Open Data Link                                     |
 | ------------------------------ | -------------------------------------------------------------------------------- | -------------------------------------------------- |
