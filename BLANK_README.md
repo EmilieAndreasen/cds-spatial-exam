@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="images/Klar Parat.jpg" alt="Logo" width="120" height="120">
+    <img src="images/Klar_Parat.jpg" alt="Logo" width="120" height="120">
   </p>
 
 <h3 align="center">From Panic to Plan: Agent-Based Evacuation Simulations</h3>
@@ -21,7 +21,7 @@ This repository contains all the necessary components to run the Agent-Based Mod
 - **NetLogo Code/Model:** The core ABM evacuation model developed in NetLogo 6.4.0.  
 - **Data (Shapefiles, CSVs):** Geographic data used within the NetLogo model, processed and formatted as shapefiles, and CSV files with traffic data.  
 - **Python Preprocessing Scripts:** Scripts for preprocessing the initial raw data to generate the required shapefiles for the NetLogo model.  
-- **Traffic Analysis and Plotting Scripts:** Python scripts for plotting traffic and evacuation shelter data in Aarhus, providing visual insights into traffic patterns and potential evacuation dynamics near shelters.  
+- **Traffic Analysis and Plotting Scripts:** Python scripts for plotting traffic and evacuation shelter data in Aarhus, providing visual insights into traffic patterns near shelters.  
 
 To re-run any of the above, please refer to the different relevant sub-sections under [*Steps for Re-running*](https://github.com/EmilieAndreasen/cds-spatial-exam#technical-pipeline). For further information regarding the project or its reproducibility, contact the authors (see [*Authors*](https://github.com/EmilieAndreasen/cds-spatial-exam#authors)).
 <br>
@@ -30,31 +30,20 @@ To re-run any of the above, please refer to the different relevant sub-sections 
 The repository is structured as such:
 | <div style="width:120px"></div>| Description |
 |---------|:-----------|
-| ```app```  | Folder with all relevant scripts to build and deploy the ```Aarhus RentMapper``` tool (see [app/README.md](https://github.com/MinaAlmasi/aarhus-rentmapper/blob/main/app/README.md))          |
 | ```data``` | Folder with scraped rental data, the geodata and the merged datafile ```complete_data.csv``` with rental data containing geospatial information (see [data/README.md](https://github.com/MinaAlmasi/aarhus-rentmapper/blob/main/data/README.md)).      |
-| ```results``` | Folder with aggregated results. |
-| ```plots```| Folder with plots used in the paper.
-| ```src```  | Folder with scripts used for cleaning scraped data, combining rental data with geodata, performing data analysis and plotting (see [src/README.md](https://github.com/MinaAlmasi/aarhus-rentmapper/blob/main/src/README.md)).       |
+| ```netlogo```  | Folder with all relevant scripts to build and deploy the ```Aarhus RentMapper``` tool (see [app/README.md](https://github.com/MinaAlmasi/aarhus-rentmapper/blob/main/app/README.md))          |
+| ```scripts```  | Folder with scripts used for cleaning scraped data, combining rental data with geodata, performing data analysis and plotting (see [src/README.md](https://github.com/MinaAlmasi/aarhus-rentmapper/blob/main/src/README.md)).       |
 | ```run.sh```    | Run entire analysis pipeline (except for cartograms)       |
 | ```setup.sh```  | Run to install create Python virtual environment ```env``` and install necessary packages within it |
 
 <br>
 
-## Technical Pipeline
-The code was mainly developed in ```Python``` (3.9.13) on a Macbook Pro ‘13 (2020, 2 GHz Intel i5, 16GB of ram). Whether it will work on Windows cannot be guaranteed. Python's [venv](https://docs.python.org/3/library/venv.html) needs to be installed for the setup to work.
-
-### Setup 
+## Steps for Re-running
+### Getting Started 
 Firstly, this repository must be cloned to your device as such:
 ```
-git clone https://github.com/MinaAlmasi/aarhus-rentmapper.git
+git clone https://github.com/EmilieAndreasen/cds-spatial-exam
 ```
-
-To be able to reproduce the code, type the following in the terminal: 
-```
-bash setup.sh
-```
-The script creates a new virtual environment (```env```) and installs the necessary packages within it.
-
 
 ### Running the Analysis Pipeline
 To run the entire analysis pipeline, which laid the foundation for deploying the tool, type in your ```bash/zsh``` terminal while being located in the main repository folder (```cd aarhus-rentmapper```):
