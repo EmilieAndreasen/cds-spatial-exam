@@ -17,10 +17,17 @@
 
 <hr>
 
-This repository contains all the necessary components to run the Agent-Based Model (ABM) for evacuation in Aarhus along with  visualising traffic and movement data in Aarhus, the results of which are used to inform the [mock-up](https://www.figma.com/design/ZzUPYJiE9yhHM93OycdNY5/Spatial-Analytics%3A-Exam-application-design?node-id=0-1) of the “klar | parat” app. Key elements in the repo include:  
+This repository contains all the necessary components to run the Agent-Based Model (ABM) for evacuation in Aarhus along with  visualising traffic and movement data in Aarhus, the results of which are used to inform the [mock-up](https://www.figma.com/design/ZzUPYJiE9yhHM93OycdNY5/Spatial-Analytics%3A-Exam-application-design?node-id=0-1) of the “klar | parat” app.  
+
+<p align="center">
+    <img src="images/ABM_to_APP.png" alt="Logo">
+  </p>
+
+
+Key elements in this repository include:  
 - **NetLogo Code/Model:** The core ABM evacuation model developed in NetLogo 6.4.0.  
 - **Data (Shapefiles, CSVs):** Geographic data used within the NetLogo model, processed and formatted as shapefiles, and CSV files with traffic data.  
-- **Python Preprocessing Scripts:** Scripts for preprocessing the initial raw data to generate the required shapefiles for the NetLogo model.  
+- **Python Preprocessing Scripts:** Script for preprocessing the initial raw data to generate the required shelter shapefile for the NetLogo model.  
 - **Traffic Analysis and Plotting Scripts:** Python scripts for plotting traffic and evacuation shelter data in Aarhus, providing visual insights into traffic patterns near shelters.  
 
 To re-run any of the above, please refer to the different relevant sub-sections under [*Steps for Re-running*](https://github.com/EmilieAndreasen/cds-spatial-exam#technical-pipeline). For further information regarding the project or its reproducibility, contact the authors (see [*Authors*](https://github.com/EmilieAndreasen/cds-spatial-exam#authors)).
@@ -44,6 +51,28 @@ The repository is structured as such:
 If the attachment has not already been cloned or downloaded and unzipped, then start by cloning or downloading the zip file and unzip it in your desired location. 
 
 ### Instructions (NetLogo Model)
+**2. Prerequisites**
+Ensure you have NetLogo 6.4.0 installed to run the model. Attempting to open or run the model with another version can result in functionalities being lost.  
+
+**3. Setup and Run Model**
+Below are the steps to follow for running the model to simulate evacuation in part of Aarhus.  
+- 
+
+
+### Instructions (Python Script)
+**2. Set Up the Virtual Environment:**  
+Execute the following command in your terminal to set up the Python virtual environment and install the needed dependencies.
+```
+bash setup.sh 
+```
+
+**3. Activate the Virtual Environment and Run the Code:** 
+Activate the virtual environment and run the Script as needed. 
+```
+source env/bin/activate
+python script
+```
+Open the python script in the scripts folder to preprocess the original raw shelters23.geojson data.
 
 
 ### Instructions (Python Notebook)
