@@ -46,19 +46,26 @@ If the attachment has not already been cloned or downloaded and unzipped, then s
 ### Instructions (NetLogo Model)
 
 
-### Instructions (Python Scripts)
+### Instructions (Python Notebook)
 **2. Set Up the Virtual Environment:**  
 Execute the following command in your terminal to set up the Python virtual environment and install the needed dependencies.
 ```
 bash setup.sh 
 ```
 
-**3. Activate the Virtual Environment and Run the Code:**  
-
-
+**3. Activate the Virtual Environment and Run the Code:** 
+Activate the virtual environment and run the Jupyter Notebook as needed. 
+```
+source env/bin/activate
+jupyter notebook
+```
+Open the notebook file in the scripts folder to preprocess data and generate plot.
 
 
 <br>
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
 
 ## Authors 
 This code repository was made as a joint effort by Emilie Munch Andreasen ([@EmilieAndreasen](https://github.com/EmilieAndreasen)), Katrine Munkholm Hygebjerg-Hansen ([@KatrineMunkhholm](https://github.com/katrinemunkholm)), and Sabrina Schroll Zaki Hansen ([@Sabszh](https://github.com/sabszh)). 
