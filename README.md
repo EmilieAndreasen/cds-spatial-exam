@@ -50,10 +50,10 @@ The repository is structured as such:
 If the attachment has not already been cloned or downloaded and unzipped, then start by cloning or downloading the zip file and unzip it in your desired location. 
 
 ### Instructions (NetLogo Model)
-**2. Prerequisites**  
+**2. Prerequisites:**  
 Ensure you have NetLogo 6.4.0 installed to run the model. Attempting to open or run the model with another version can result in functionalities being lost.  
 
-**3. Setup and Run Model**  
+**3. Setup and Run Model:**  
 Below are the steps to follow for running the model to simulate evacuation in part of Aarhus.  
 
 **Set desired parameters for the model**  
@@ -84,8 +84,6 @@ This final button will run the simulation. Residents will start moving towards t
 
 - *Residents' movement:* Residents move towards shelters if they are not dead and their milling time has elapsed. If they reach a shelter, they are marked as evacuated; if they exceed the maximum evacuation time, they are marked as dead.  
 - *Update mortality rate:* Calculates the mortality rate based on the number of dead residents.
-
-
 
 ### Instructions (Python Script)
 **2. Set Up the Virtual Environment:**  
