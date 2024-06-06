@@ -50,7 +50,7 @@ The repository is structured as such:
 If the attachment has not already been cloned or downloaded and unzipped, then start by cloning or downloading the zip file and unzip it in your desired location. 
 
 ### Instructions (NetLogo Model)
-**2. Prerequisites**
+**2. Prerequisites**  
 Ensure you have NetLogo 6.4.0 installed to run the model. Attempting to open or run the model with another version can result in functionalities being lost.  
 
 **3. Setup and Run Model**  
