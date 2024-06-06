@@ -31,6 +31,7 @@ The repository is structured as such:
 | <div style="width:120px"></div>| Description |
 |---------|:-----------|
 | ```data``` | Folder with original un-processed raw data (see [data/README.md](https://github.com/EmilieAndreasen/cds-spatial-exam/main/data/README.md)).      |
+| ```images```  | Folder with logo image and plots used in the paper. |
 | ```netlogo```  | Folder with all relevant data and NetLogo model (see [netlogo/README.md](https://github.com/EmilieAndreasen/cds-spatial-exam/main/main/netlogo/README.md))          |
 | ```scripts```  | Folder with Python scripts and notebook used for preprocessing data and plotting (see [script/README.md](https://github.com/EmilieAndreasen/cds-spatial-exam/main/script/README.md)).       |
 | ```setup.sh```  | Run to create Python virtual environment ```env``` and install necessary requirements |
